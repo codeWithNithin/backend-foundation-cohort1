@@ -91,6 +91,44 @@ NOTE: Before that bomb moment, USA was with Sovient Union.
 
 ##### 1st JAN 1983 - Birthdate of internet.
 
+### How Internet works
+
+- When you type iprep.ai and click enter a HTTP request will be sent to the server.
+- this request here is the data that we send to server.
+- this data is divided into chunks or packets.
+- each packets will recieve a sequene number so that the server can reassemble these packets in order.
+- these packets are sent through our home router to ISP routers.
+- from ISP routers it is sent to nearby routers.
+- each packets goes through router because these router knows the shortest path to reach the server.
+
+# Quick recap on how the data flows
+
+- Client -> sends a request -> request broken into chunks -> each chunk gets its own sequence number -> packets are sent to our home router -> then to our ISP routers -> packets are sent away through routers -> to reach destination.
+
+### Why data is broken into packets?
+
+- because if we send whole data at a time then network overload will take place.
+- so data must be broken into packets.
+
+### How does the server knows if the packet is missing?
+
+- server runs a checksum to check if any data corruption has happend. by this it will get to know the missing packets.
+
 ### OSI model
+
+- a 7 layer model, which is used as a reference to see how data communication takes place.
+
+- 7. Application layer.
+- 6. Presentation Layer.
+- 5. Session Layer.
+- 4. Transport Layer.
+- 3. Network Layer.
+- 2. Data Link Layer.
+- 1. Physical Layer.
+
+#### NOTE
+
+- When the comm. take place from browser to server - Encapsulation.
+- from Server to Browser - Decapsulation.
 
 ### TCP/IP model
